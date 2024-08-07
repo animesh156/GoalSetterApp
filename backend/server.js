@@ -24,5 +24,5 @@ app.use(errorHandler)
 
 
 app.listen(port, () => {
-    console.log(`Server started on port ${port}.`.magenta)
+    console.log(`Server started on port ${port}.`.yellow)
 });

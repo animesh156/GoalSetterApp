@@ -4,7 +4,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node backend/server",
-    "dev": "node --watch backend/server"
+    "dev": "node --watch backend/server",
+    "client": "npm run dev --prefix frontend"
   },
   "keywords": [],
   "author": "",
