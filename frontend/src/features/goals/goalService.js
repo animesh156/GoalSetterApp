@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-const createRoute = "http://localhost:5000/api/goals";
-const getRoute = "http://localhost:5000/api/goals"
+const createRoute = "https://goal-setter-backend-snfw.onrender.com/api/goals";
+const getRoute = "https://goal-setter-backend-snfw.onrender.com/api/goals"
 
 
 
@@ -40,7 +40,7 @@ const deleteGoal = async (goalId, token) => {
     },
   }
 
-  const response = await axios.delete(`http://localhost:5000/api/goals/${goalId}`, config)
+  const response = await axios.delete(`https://goal-setter-backend-snfw.onrender.com/api/goals/${goalId}`, config)
 
   return response.data
 }
