@@ -5,6 +5,7 @@ const User = require('../model/userModel')
 
 const registerUser = asyncHandler(async (req,res) => {
     const {name, email, password} = req.body
+    
     if(!name || !email || !password){
         res.status(400)
         throw new Error('Please give required fields')
@@ -76,12 +77,8 @@ const loginUser = asyncHandler(async (req,res) => {
 // @access Private
 
 const getMe = asyncHandler(async (req,res) => {
-    const {_id, name, email} = await User.findById(req.user.id)
-    res.status(200).json({
-        id:_id,
-        name,
-        email,    
-    })
+  
+    res.status(200).json(req.user)
 })
 
 // generate token
