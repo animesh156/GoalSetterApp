@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-const registerRoute = "http://localhost:5000/api/users/register"
-const loginRoute =    "http://localhost:5000/api/users/login"
+const registerRoute = "https://goal-setter-backend-snfw.onrender.com/api/users/register"
+const loginRoute =    "https://goal-setter-backend-snfw.onrender.com/api/users/login"
 
 
 // Register user
