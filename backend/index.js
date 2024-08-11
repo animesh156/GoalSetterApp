@@ -14,7 +14,7 @@ dotenv.config();
 connectDB();
 
 
-app.use(cors())
+app.use(cors({origin: 'https://goal-setter-frontend-eta.vercel.app'}))
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
