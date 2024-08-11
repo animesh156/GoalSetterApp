@@ -1,8 +1,8 @@
 import axios from 'axios'
 
-const registerRoute = "http://localhost:5000/api/users/register"
+const registerRoute = "https://goal-setter-backend-vert.vercel.app/api/users/register"
 
-const loginRoute =    "http://localhost:5000/api/users/login"
+const loginRoute =    "https://goal-setter-backend-vert.vercel.app/api/users/login"
 
 
 // Register user
