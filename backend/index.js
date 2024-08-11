@@ -16,12 +16,12 @@ connectDB();
 const app = express();
 
 
-const corsOrigin ={
-    origin:' http://localhost:5173/', 
-    credentials:true,            
-    optionSuccessStatus:200
-}
-app.use(cors(corsOrigin));
+     app.use(cors({
+       origin: 'https://goal-setter-frontend-eta.vercel.app', // Allow requests from this specific origin
+       methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow these HTTP methods
+       allowedHeaders: ['Content-Type', 'Authorization'], // Allow these headers
+     }));
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
