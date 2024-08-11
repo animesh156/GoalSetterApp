@@ -1,7 +1,9 @@
 import axios from 'axios'
 
-const createRoute = "https://goal-setter-backend-snfw.onrender.com/api/goals";
-const getRoute = "https://goal-setter-backend-snfw.onrender.com/api/goals"
+const createRoute = "https://goal-setter-backend-seven.vercel.app/api/goals";
+
+// https://goal-setter-backend-snfw.onrender.com/api/goals
+const getRoute = "https://goal-setter-backend-seven.vercel.app/api/goals"
 
 
 
@@ -40,7 +42,7 @@ const deleteGoal = async (goalId, token) => {
     },
   }
 
-  const response = await axios.delete(`https://goal-setter-backend-snfw.onrender.com/api/goals/${goalId}`, config)
+  const response = await axios.delete(`https://goal-setter-backend-seven.vercel.app/api/goals/${goalId}`, config)
 
   return response.data
 }
